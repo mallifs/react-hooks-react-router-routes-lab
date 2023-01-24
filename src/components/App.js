@@ -6,26 +6,26 @@ import Actors from "./Actors";
 import Directors from "./Directors";
 import Movies from "./Movies";
 
+
 function App() {
-  return(
+  return (
     <div>
-    <NavBar/>
-    <Switch>
-      <Route path="/movies">
-        <Movies/>
-      </Route>
-      <Route path="/directors">
-        <Directors/>
-      </Route>
-      <Route path="/actors">
-        <Actors/>
-      </Route>
-      <Route path="/">
-        <Home/>
-      </Route>
-    
-    </Switch>
-  </div>
+      <NavBar/>
+      <Switch>
+        <Route path='/movies' >
+          <Movies/>
+        </Route>
+        <Route path='/directors' >
+          <Directors/>
+        </Route>
+        <Route path='/actors' >
+          <Actors/>
+        </Route>
+        <Route path='/' >
+          <Home/>
+        </Route>
+      </Switch>
+    </div>
   )
 }
 
